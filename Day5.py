@@ -6,7 +6,7 @@ vr_devices = [
   ("Valve Index","6666*7777",144),
   ("PS VR2","8888*9999",120),
 ]
-#遍历列表，批量检测刷新率是否达标（达标阀值： >=90 Hz）
+#遍历列表，批量检测刷新率是否达标（达标阀值 ：>=90Hz）
 print("【VR设备刷新率检测报告】")
 for device in vr_devices:
   name,red,fps = device #解包元组，拆分设备信息
