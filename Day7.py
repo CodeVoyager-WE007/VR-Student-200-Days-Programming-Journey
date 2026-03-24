@@ -32,11 +32,11 @@ def print_vr_info(device_dict):
     ]
     #遍历打印所有设备信息
     for device in vr_device:
-        print_vr_info(device)
+      print_vr_info(device)
         #按价格筛选设备（价格<5000元）
-        print("【价格<5000元的VR设备】")
-        budget_devices = [d for d in vr_device if d["price"] < 5000]
-        for d in budget_devices:
-            print(f"-{d['name']}:{d['price']}元")
+    print("【价格<5000元的VR设备】")
+    budget_devices = [d for d in vr_device if d["price"] < 5000]
+    for d in budget_devices:
+       print(f"-{d['name']}:{d['price']}元")
 
     
