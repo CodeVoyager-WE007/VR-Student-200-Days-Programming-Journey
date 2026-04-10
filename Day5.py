@@ -9,12 +9,12 @@ vr_devices = [
 #遍历列表，批量检测刷新率是否达标（达标阀值 ：>=90Hz）
 print("【VR设备刷新率检测报告】")
 for device in vr_devices:
-  name,red,fps = device #解包元组，拆分设备信息
+  name,res,fps = device #解包元组，拆分设备信息
   if fps >= 90:
       status = "达标"
   else:
     status = "不达标"
-  print(f"设备：{name}|分辨率：{red}|刷新率：{fps}Hz | 状态：{status}")
+  print(f"设备：{name}|分辨率：{res}|刷新率：{fps}Hz | 状态：{status}")
         #统计达标设备数量
   qualified = [d for d in vr_devices if d[2] >= 90]
   print(f"\n检测总结：共{len(vr_devices)}台设备，达标{len(qualified)}台")
